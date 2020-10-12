@@ -5,9 +5,13 @@ import { FONTSIZE } from '../../design/fontsize.constant'
 import { SPACING } from '../../design/spacing.constant'
 
 const Label = styled.p`
-  font-size: ${FONTSIZE.S};
+  font-size: ${FONTSIZE.XS};
   text-align: center;
   margin-bottom: ${SPACING.S};
+
+  @media only screen and (min-width: ${BREAKPOINT.tablet}) {
+    font-size: ${FONTSIZE.S};
+  }
 `
 
 const Value = styled.p`
