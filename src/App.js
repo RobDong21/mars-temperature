@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 
 import { api } from './service/api'
 import { Temperature } from './components/temperature/temperature.component'
+import { Body } from './design/typography'
 
 const App = () => {
   const [temperature, setTemperature] = useState(null)
@@ -19,6 +20,7 @@ const App = () => {
 
   return (
     <div>
+      <Body>Latest known temperature on Mars</Body>
       {
         temperature && <Temperature temperature={temperature} />
       }
